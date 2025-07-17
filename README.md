@@ -1,77 +1,36 @@
-# 🌐 World News Today
-
-A modern, professional news headlines app built with React and Tailwind CSS, powered by [NewsAPI.org](https://newsapi.org). Stay updated with the latest headlines from around the world, filter by country and category, and enjoy a clean, responsive UI.
-
-## Features
-
-- Browse top headlines from multiple countries and categories
-- Responsive, card-based layout for news articles
-- Professional, consistent design with Tailwind CSS
-- Graceful placeholder for articles with no image
-- Fast, client-side filtering and loading
-- Powered by [NewsAPI.org](https://newsapi.org)
-
-## Screenshots
-
-![App Screenshot](screenshot.png) <!-- Add a screenshot if available -->
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
+First, run the development server:
 
-- [Node.js](https://nodejs.org/) (v16+ recommended)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### Setup
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-1. **Clone the repository:**
-   ```bash
-   git clone <your-repo-url>
-   cd <repo-folder>
-   ```
-2. **Install dependencies:**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-3. **Set up environment variables:**
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-   - Create a `.env` file in the root directory.
-   - Add your NewsAPI key:
-     ```env
-     VITE_NEWSAPI_KEY=your_newsapi_key_here
-     ```
-   - Get a free API key from [NewsAPI.org](https://newsapi.org/register).
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-4. **Run the app locally:**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-   The app will be available at `http://localhost:5173` (or as shown in your terminal).
+## Learn More
 
-## Usage
+To learn more about Next.js, take a look at the following resources:
 
-- Select a country from the dropdown to view headlines from that region.
-- Filter news by category using the buttons.
-- Click "Read more →" to open the full article in a new tab.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Tech Stack
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Axios](https://axios-http.com/)
-- [NewsAPI.org](https://newsapi.org)
+## Deploy on Vercel
 
-## Credits
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- News data provided by [NewsAPI.org](https://newsapi.org)
-- UI built with [Tailwind CSS](https://tailwindcss.com/)
-- Placeholder SVG icon from [Heroicons](https://heroicons.com/)
-
----
-
-Feel free to fork, contribute, or suggest improvements!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
