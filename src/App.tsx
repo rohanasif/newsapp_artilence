@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 const API_KEY = import.meta.env.VITE_NEWSAPI_KEY;
