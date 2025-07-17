@@ -1,69 +1,77 @@
-# React + TypeScript + Vite
+# 🌐 World News Today
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, professional news headlines app built with React and Tailwind CSS, powered by [NewsAPI.org](https://newsapi.org). Stay updated with the latest headlines from around the world, filter by country and category, and enjoy a clean, responsive UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse top headlines from multiple countries and categories
+- Responsive, card-based layout for news articles
+- Professional, consistent design with Tailwind CSS
+- Graceful placeholder for articles with no image
+- Fast, client-side filtering and loading
+- Powered by [NewsAPI.org](https://newsapi.org)
 
-## Expanding the ESLint configuration
+## Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![App Screenshot](screenshot.png) <!-- Add a screenshot if available -->
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd <repo-folder>
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. **Set up environment variables:**
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   - Create a `.env` file in the root directory.
+   - Add your NewsAPI key:
+     ```env
+     VITE_NEWSAPI_KEY=your_newsapi_key_here
+     ```
+   - Get a free API key from [NewsAPI.org](https://newsapi.org/register).
+
+4. **Run the app locally:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+   The app will be available at `http://localhost:5173` (or as shown in your terminal).
+
+## Usage
+
+- Select a country from the dropdown to view headlines from that region.
+- Filter news by category using the buttons.
+- Click "Read more →" to open the full article in a new tab.
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/)
+- [NewsAPI.org](https://newsapi.org)
+
+## Credits
+
+- News data provided by [NewsAPI.org](https://newsapi.org)
+- UI built with [Tailwind CSS](https://tailwindcss.com/)
+- Placeholder SVG icon from [Heroicons](https://heroicons.com/)
+
+---
+
+Feel free to fork, contribute, or suggest improvements!
